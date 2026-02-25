@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Aquatlas – Hydrology (WMS)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>Aquatlas</h1><div class="sub">Hydrology (WMS)</div>
+  </header>
+  <main class="wrap">
+    <aside class="side">
+      <h2>Layers</h2>
+      <div id="layer-list"></div>
+      <h2>Legend</h2>
+      <div id="legend" class="legend"><img id="legend-img" alt="Legend"/></div>
+    </aside>
+    <section class="content">
+      <div id="map"></div>
+      <div id="info" class="info"></div>
+    </section>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
